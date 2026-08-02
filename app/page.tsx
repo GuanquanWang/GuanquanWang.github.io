@@ -57,7 +57,7 @@ export default function Home() {
           </figure>
 
           <div className="intro-copy">
-            <h1 id="name-heading">Guanquan Wang <span>王 冠全</span></h1>
+            <h1 id="name-heading">Guanquan Wang <span>王 冠権</span></h1>
             <p className="role">
               <span className="lang jp">東京大学 博士後期課程 · ロボット学習</span>
               <span className="lang en">Ph.D. candidate · Robot Learning · The University of Tokyo</span>
@@ -73,7 +73,7 @@ export default function Home() {
             <p className="availability lang jp">2026年秋以降、日本国内の研究開発職を希望しています。</p>
             <p className="availability lang en">Seeking research and development roles in Japan from autumn 2026.</p>
             <div className="profile-links" aria-label="Profile links">
-              <a href="mailto:james23sh@gmail.com">Email</a>
+              <a href="mailto:gqwang2016@gmail.com">Email</a>
               <a href="https://github.com/GuanquanWang" target="_blank" rel="noreferrer">GitHub <ExternalArrow /></a>
               <a href="https://openreview.net/profile?id=~Guanquan_Wang1" target="_blank" rel="noreferrer">OpenReview <ExternalArrow /></a>
               <a href="https://www.linkedin.com/in/guanquan-wang-5398253b8" target="_blank" rel="noreferrer">LinkedIn <ExternalArrow /></a>
@@ -257,7 +257,7 @@ export default function Home() {
               <span className="publication-year">2026</span>
               <p>
                 <strong>Consistency Trajectory Planning: High-Quality and Efficient Trajectory Optimization for Offline Model-Based Reinforcement Learning.</strong>
-                <span>Guanquan Wang et al. · TMLR.</span>
+                <span className="publication-authors"><b>Guanquan Wang</b>, Takuya Hiraoka, Yoshimasa Tsuruoka · TMLR.</span>
                 <a href="https://openreview.net/forum?id=RVGkT9ISVf" target="_blank" rel="noreferrer">Paper <ExternalArrow /></a>
               </p>
             </li>
@@ -265,7 +265,7 @@ export default function Home() {
               <span className="publication-year">2025</span>
               <p>
                 <strong>Which Experiences Are Influential for RL Agents? Efficiently Estimating the Influence of Experiences.</strong>
-                <span>Guanquan Wang et al. · RLJ / RLC.</span>
+                <span className="publication-authors">Takuya Hiraoka, <b>Guanquan Wang</b>, Takashi Onishi, Yoshimasa Tsuruoka · RLJ / RLC.</span>
                 <a href="https://openreview.net/forum?id=pUvF97zAu9" target="_blank" rel="noreferrer">Paper <ExternalArrow /></a>
               </p>
             </li>
@@ -273,7 +273,7 @@ export default function Home() {
               <span className="publication-year">2024</span>
               <p>
                 <strong>Planning with Consistency Models for Model-Based Offline Reinforcement Learning.</strong>
-                <span>Guanquan Wang et al. · TMLR.</span>
+                <span className="publication-authors"><b>Guanquan Wang</b>, Takuya Hiraoka, Yoshimasa Tsuruoka · TMLR.</span>
                 <a href="https://openreview.net/forum?id=TuACCzfty3" target="_blank" rel="noreferrer">Paper <ExternalArrow /></a>
               </p>
             </li>
@@ -281,7 +281,7 @@ export default function Home() {
               <span className="publication-year">2023</span>
               <p>
                 <strong>A Reward Function Design for CSTR Simulation Environments.</strong>
-                <span>Guanquan Wang et al. · SICE.</span>
+                <span className="publication-authors"><b>Guanquan Wang</b> et al. · SICE.</span>
               </p>
             </li>
           </ol>
@@ -382,7 +382,7 @@ export default function Home() {
       <footer className="site-footer">
         <div>
           <span>© 2026 Guanquan Wang</span>
-          <a href="mailto:james23sh@gmail.com">james23sh@gmail.com</a>
+          <a href="mailto:gqwang2016@gmail.com">gqwang2016@gmail.com</a>
           <a href="#top">
             <span className="nav-jp">ページ上部へ</span>
             <span className="nav-en">Back to top</span>

@@ -485,6 +485,11 @@ video {
   font-size: 14px;
 }
 
+.publication-authors b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .publication-list a {
   display: inline-block;
   margin-top: 4px;

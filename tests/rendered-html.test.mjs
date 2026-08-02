@@ -10,6 +10,8 @@ test("exports Guanquan Wang's bilingual research portfolio", async () => {
   assert.match(html, /kitchen-stp\.mp4/);
   assert.match(html, /antmaze-stp\.mp4/);
   assert.doesNotMatch(html, /Decision Diffuser|decision-diffuser\.mp4/);
+  assert.match(html, /Takuya Hiraoka, <b>Guanquan Wang<\/b>, Takashi Onishi, Yoshimasa Tsuruoka/);
+  assert.doesNotMatch(html, /Guanquan Wang et al\. · RLJ \/ RLC/);
   assert.match(html, /guanquanwang\.github\.io\/og-simple\.png/);
   assert.doesNotMatch(html, /STP の主な評価結果|Selected STP evaluation results/);
   assert.doesNotMatch(html, /WANG_GUANQUAN|final_defense|codex-preview/);

@@ -44,7 +44,7 @@ next-env.d.ts
 
 # local source materials and rendering scratch space
 /WANG.jpg
-/WANG_GUANQUAN_CV.pdf
-/WANG_GUANQUAN_研究経歴書.pdf
-/Wang Guanquan_final_defense.pptx
+/*.pdf
+/*.pptx
+~$*
 /tmp/

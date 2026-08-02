@@ -230,15 +230,31 @@ export default function Home() {
           <article className="video-study">
             <header>
               <h3>AntMaze</h3>
-              <p className="lang jp">高次元な四足歩行ロボットによる長期迷路探索。</p>
-              <p className="lang en">Long-horizon maze navigation with a high-dimensional quadruped.</p>
+              <p className="lang jp">AntMaze Medium と Large における、高次元な四足歩行ロボットの長期迷路探索。</p>
+              <p className="lang en">Long-horizon quadruped navigation on AntMaze Medium and Large.</p>
             </header>
             <div className="video-grid">
               <figure>
                 <video controls muted loop playsInline preload="metadata">
                   <source src="/media/antmaze-stp.mp4" type="video/mp4" />
                 </video>
-                <figcaption><strong>STP</strong><span>Proposed method</span></figcaption>
+                <figcaption><strong>STP</strong><span>Medium → Large</span></figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article className="video-study">
+            <header>
+              <h3>Adroit</h3>
+              <p className="lang jp">高自由度ロボットハンドによる Door、Hammer、Pen の精密な物体操作。</p>
+              <p className="lang en">Dexterous manipulation of Door, Hammer, and Pen with a high-DoF robotic hand.</p>
+            </header>
+            <div className="video-grid">
+              <figure>
+                <video controls muted loop playsInline preload="metadata">
+                  <source src="/media/adroit-stp.mp4" type="video/mp4" />
+                </video>
+                <figcaption><strong>STP</strong><span>Door → Hammer → Pen</span></figcaption>
               </figure>
             </div>
           </article>
@@ -281,7 +297,21 @@ export default function Home() {
               <span className="publication-year">2023</span>
               <p>
                 <strong>A Reward Function Design for CSTR Simulation Environments.</strong>
-                <span className="publication-authors"><b>Guanquan Wang</b> et al. · SICE.</span>
+                <span className="publication-authors"><b>Guanquan Wang</b>, Takuya Hiraoka, Yoshimasa Tsuruoka · SICE.</span>
+              </p>
+            </li>
+            <li>
+              <span className="publication-year">2017</span>
+              <p>
+                <strong>A Detail-Preserved and Luminance-Consistent Multi-Exposure Image Fusion Algorithm.</strong>
+                <span className="publication-authors"><b>Guanquan Wang</b>, Yue Zhou · ICMV.</span>
+              </p>
+            </li>
+            <li>
+              <span className="publication-year">2016</span>
+              <p>
+                <strong>Optimizing Vehicle Localization based on Particle Filter and Kalman Filter.</strong>
+                <span className="publication-authors"><b>Guanquan Wang</b>, Hee-hyol Lee · ICT-ROBOT.</span>
               </p>
             </li>
           </ol>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Guanquan Wang is a University of Tokyo Ph.D. candidate researching efficient generative trajectory planning, offline reinforcement learning, and embodied AI.",
   keywords: [
     "Guanquan Wang",
-    "王冠全",
+    "王冠権",
     "Robot Learning",
     "Embodied AI",
     "Reinforcement Learning",

@@ -196,35 +196,6 @@ export default function Home() {
               </article>
             </li>
           </ol>
-
-          <div className="results-block">
-            <h3>
-              <span className="lang jp">STP の主な評価結果</span>
-              <span className="lang en">Selected STP evaluation results</span>
-            </h3>
-            <p className="results-note lang jp">D4RL ベンチマークにおける平均 normalized score。</p>
-            <p className="results-note lang en">Average normalized scores on D4RL benchmarks.</p>
-            <div className="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Maze</th>
-                    <th>Kitchen</th>
-                    <th>AntMaze</th>
-                    <th>Adroit</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>183.8</td>
-                    <td>83.6</td>
-                    <td>85.3</td>
-                    <td>114.3</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
         </section>
 
         <section className="section video-section" id="videos">

@@ -28,10 +28,10 @@ export const metadata: Metadata = {
     siteName: "Guanquan Wang — Research Portfolio",
     title: "Guanquan Wang — Robot Learning Researcher",
     description:
-      "Fast generative trajectory planning for robots and embodied agents.",
+      "Research on generative trajectory planning, offline reinforcement learning, and robot learning.",
     images: [
       {
-        url: "/og.png",
+        url: "/og-simple.png",
         width: 1731,
         height: 909,
         alt: "Guanquan Wang — Robot Learning Researcher",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Guanquan Wang — Robot Learning Researcher",
     description:
-      "Fast generative trajectory planning for robots and embodied agents.",
-    images: ["/og.png"],
+      "Research on generative trajectory planning, offline reinforcement learning, and robot learning.",
+    images: ["/og-simple.png"],
   },
 };
 

@@ -12,520 +12,423 @@ export default function Home() {
         aria-label="日本語と英語を切り替える / Switch between Japanese and English"
       />
 
-      <header className="topbar">
-        <a className="wordmark" href="#top" aria-label="Guanquan Wang — top">
-          <span className="wordmark-mark">GW</span>
-          <span className="wordmark-copy">ROBOT LEARNING</span>
-        </a>
-
-        <nav className="main-nav" aria-label="Primary navigation">
-          <a href="#research">
-            <span className="nav-jp">研究</span>
-            <span className="nav-en">Research</span>
+      <header className="site-header">
+        <div className="header-inner">
+          <a className="site-name" href="#top">
+            Guanquan Wang
           </a>
-          <a href="#experiments">
-            <span className="nav-jp">実験</span>
-            <span className="nav-en">Experiments</span>
-          </a>
-          <a href="#publications">
-            <span className="nav-jp">論文</span>
-            <span className="nav-en">Publications</span>
-          </a>
-          <a href="#profile">
-            <span className="nav-jp">経歴</span>
-            <span className="nav-en">Profile</span>
-          </a>
-        </nav>
-
-        <label className="language-switch" htmlFor="language-toggle">
-          <span className="switch-jp">JP</span>
-          <span className="switch-en">EN</span>
-        </label>
+          <nav className="site-nav" aria-label="Primary navigation">
+            <a href="#research">
+              <span className="nav-jp">研究</span>
+              <span className="nav-en">Research</span>
+            </a>
+            <a href="#videos">
+              <span className="nav-jp">動画</span>
+              <span className="nav-en">Videos</span>
+            </a>
+            <a href="#publications">
+              <span className="nav-jp">論文</span>
+              <span className="nav-en">Publications</span>
+            </a>
+            <a href="#profile">
+              <span className="nav-jp">経歴</span>
+              <span className="nav-en">Profile</span>
+            </a>
+          </nav>
+          <label className="language-switch" htmlFor="language-toggle">
+            <span className="switch-jp">日本語</span>
+            <span aria-hidden="true">/</span>
+            <span className="switch-en">EN</span>
+          </label>
+        </div>
       </header>
 
       <main className="page" id="top">
-        <section className="hero section-frame" aria-labelledby="hero-title-jp">
-          <div className="hero-grid" aria-hidden="true" />
-          <div className="hero-copy">
-            <div className="availability">
-              <span className="availability-dot" />
-              <span className="lang jp">2026年秋より、日本での研究開発職を希望</span>
-              <span className="lang en">OPEN TO R&amp;D ROLES IN JAPAN · AUTUMN 2026</span>
+        <section className="intro" aria-labelledby="name-heading">
+          <figure className="portrait">
+            <Image
+              src="/wang-guanquan.jpg"
+              alt="Guanquan Wang"
+              width={1120}
+              height={1500}
+              priority
+              unoptimized
+            />
+          </figure>
+
+          <div className="intro-copy">
+            <h1 id="name-heading">Guanquan Wang <span>王 冠全</span></h1>
+            <p className="role">
+              <span className="lang jp">東京大学 博士後期課程 · ロボット学習</span>
+              <span className="lang en">Ph.D. candidate · Robot Learning · The University of Tokyo</span>
+            </p>
+            <p className="bio lang jp">
+              強化学習、生成モデル、モデルベース制御を用いた軌道計画を研究しています。
+              特に、長期的な行動計画を少ない推論ステップで生成する方法に取り組んでいます。
+            </p>
+            <p className="bio lang en">
+              I study trajectory planning with reinforcement learning, generative models,
+              and model-based control, with a focus on generating long-horizon plans in fewer inference steps.
+            </p>
+            <p className="availability lang jp">2026年秋以降、日本国内の研究開発職を希望しています。</p>
+            <p className="availability lang en">Seeking research and development roles in Japan from autumn 2026.</p>
+            <div className="profile-links" aria-label="Profile links">
+              <a href="mailto:james23sh@gmail.com">Email</a>
+              <a href="https://github.com/GuanquanWang" target="_blank" rel="noreferrer">GitHub <ExternalArrow /></a>
+              <a href="https://openreview.net/profile?id=~Guanquan_Wang1" target="_blank" rel="noreferrer">OpenReview <ExternalArrow /></a>
+              <a href="https://www.linkedin.com/in/guanquan-wang-5398253b8" target="_blank" rel="noreferrer">LinkedIn <ExternalArrow /></a>
             </div>
-
-            <div className="hero-kicker">GUANQUAN WANG / 王 冠全</div>
-
-            <h1 id="hero-title-jp" className="hero-title">
-              <span className="lang jp">
-                生成モデルで、
-                <br />
-                ロボットの
-                <br />
-                <em>「次の一手」</em>を速くする。
-              </span>
-              <span className="lang en">
-                Making a robot’s
-                <br />
-                <em>next move</em>
-                <br />
-                faster.
-              </span>
-            </h1>
-
-            <div className="hero-summary">
-              <p className="lang jp">
-                東京大学 博士後期課程。強化学習・生成モデル・モデルベース制御を統合し、
-                長期的な行動計画をより高速で安定にするアルゴリズムを研究しています。
-              </p>
-              <p className="lang en">
-                Ph.D. candidate at the University of Tokyo researching fast,
-                reliable long-horizon planning at the intersection of reinforcement
-                learning, generative models, and model-based control.
-              </p>
-            </div>
-
-            <div className="hero-actions">
-              <a className="button button-primary" href="#research">
-                <span className="nav-jp">研究を見る</span>
-                <span className="nav-en">Explore research</span>
-                <span aria-hidden="true">↓</span>
-              </a>
-              <a className="button button-ghost" href="mailto:james23sh@gmail.com">
-                <span className="nav-jp">メールを送る</span>
-                <span className="nav-en">Email me</span>
-                <ExternalArrow />
-              </a>
-            </div>
-
-            <ul className="hero-tags" aria-label="Research areas">
-              <li>ROBOT LEARNING</li>
-              <li>OFFLINE RL</li>
-              <li>EMBODIED AI</li>
-              <li>VLA</li>
-            </ul>
-          </div>
-
-          <aside className="portrait-panel" aria-label="Researcher portrait and profile">
-            <div className="portrait-index">RESEARCHER / 01</div>
-            <div className="portrait-frame">
-              <Image
-                src="/wang-guanquan.jpg"
-                alt="Guanquan Wang"
-                width="1120"
-                height="1500"
-                priority
-                unoptimized
-              />
-            </div>
-            <div className="portrait-meta">
-              <div>
-                <span>BASED IN</span>
-                <strong>TOKYO, JAPAN</strong>
-              </div>
-              <div>
-                <span>LANGUAGES</span>
-                <strong>ZH · EN · JP (N2)</strong>
-              </div>
-            </div>
-          </aside>
-        </section>
-
-        <section className="signal-strip" aria-label="Research highlights">
-          <div className="signal-item">
-            <strong>12×</strong>
-            <span className="lang jp">拡散プランニング比の推論高速化</span>
-            <span className="lang en">faster inference than diffusion planning</span>
-          </div>
-          <div className="signal-item">
-            <strong>2</strong>
-            <span className="lang jp">TMLR 採択論文</span>
-            <span className="lang en">papers accepted by TMLR</span>
-          </div>
-          <div className="signal-item">
-            <strong>3</strong>
-            <span className="lang jp">生成式プランナー CP · CTP · STP</span>
-            <span className="lang en">generative planners: CP · CTP · STP</span>
           </div>
         </section>
 
-        <section className="research-section section-frame" id="research">
-          <header className="section-heading">
-            <span className="section-number">01</span>
-            <div>
-              <p className="section-eyebrow">RESEARCH / 研究</p>
-              <h2>
-                <span className="lang jp">高速な生成式軌道計画</span>
-                <span className="lang en">Fast generative trajectory planning</span>
-              </h2>
-            </div>
+        <section className="section" id="research">
+          <header className="section-header">
+            <p className="section-label">Research</p>
+            <h2>
+              <span className="lang jp">生成式軌道計画の研究</span>
+              <span className="lang en">Generative trajectory planning</span>
+            </h2>
           </header>
 
-          <div className="research-intro">
+          <div className="section-intro">
             <p className="lang jp">
-              拡散モデルは多様で高品質な軌道を生成できますが、反復的なノイズ除去に時間がかかります。
-              私の研究は、長期計画の表現力を保ちながら、推論速度・計画品質・学習の簡潔さを段階的に改善します。
+              拡散モデルによる軌道生成は表現力が高い一方、反復的なノイズ除去を必要とします。
+              以下の研究では、速度、計画品質、学習方法を順に検討してきました。
             </p>
             <p className="lang en">
-              Diffusion models generate diverse, high-quality trajectories, but iterative
-              denoising is expensive. My work preserves their long-horizon expressivity
-              while progressively improving inference speed, plan quality, and training simplicity.
+              Diffusion-based trajectory models are expressive but require iterative denoising.
+              This line of work studies inference speed, planning quality, and training design in sequence.
             </p>
           </div>
 
-          <div className="method-sequence">
-            <article className="method-card method-cp">
-              <div className="method-topline">
-                <span>01</span>
-                <span>TMLR 2024</span>
+          <ol className="research-path" aria-label="Research progression from CP to CTP to STP">
+            <li className="path-item">
+              <div className="path-rail">
+                <span className="path-dot" />
+                <time>2024</time>
               </div>
-              <h3>Consistency<br />Planning</h3>
-              <p className="method-code">CP / FAST DISTILLATION</p>
-              <div className="lang jp method-description">
-                反復的な拡散サンプリングを、少数ステップの整合性モデルへ蒸留。
-                性能を保ちながら推論を最大12倍高速化しました。
-              </div>
-              <div className="lang en method-description">
-                Distills iterative diffusion sampling into a few consistency-model steps,
-                delivering up to 12× faster inference without sacrificing performance.
-              </div>
-              <a href="https://openreview.net/forum?id=TuACCzfty3" target="_blank" rel="noreferrer">
-                PAPER <ExternalArrow />
-              </a>
-            </article>
+              <article className="path-content">
+                <header>
+                  <div>
+                    <span className="method-abbr">CP</span>
+                    <h3>Consistency Planning</h3>
+                  </div>
+                  <span className="venue">TMLR 2024</span>
+                </header>
+                <p className="lang jp">
+                  拡散プランナーを consistency model に蒸留し、少数ステップで軌道を生成します。
+                  評価環境では、性能を保ちながら推論を最大12倍高速化しました。
+                </p>
+                <p className="lang en">
+                  Distills a diffusion planner into a consistency model for few-step trajectory generation,
+                  with up to 12× faster inference in the evaluated environments.
+                </p>
+                <p className="evolution-note">
+                  <span className="lang jp"><strong>着目点：</strong>反復サンプリング → 少数ステップ推論</span>
+                  <span className="lang en"><strong>Focus:</strong> iterative sampling → few-step inference</span>
+                </p>
+                <a className="paper-link" href="https://openreview.net/forum?id=TuACCzfty3" target="_blank" rel="noreferrer">
+                  Paper <ExternalArrow />
+                </a>
+              </article>
+            </li>
 
-            <div className="method-arrow" aria-hidden="true">→</div>
+            <li className="path-item">
+              <div className="path-rail">
+                <span className="path-dot" />
+                <time>2026</time>
+              </div>
+              <article className="path-content">
+                <header>
+                  <div>
+                    <span className="method-abbr">CTP</span>
+                    <h3>Consistency Trajectory Planning</h3>
+                  </div>
+                  <span className="venue">TMLR 2026</span>
+                </header>
+                <p className="lang jp">
+                  任意のノイズレベル間を移動できる軌道モデルと critic による候補選択を導入し、
+                  長期・ゴール条件付きタスクでの計画品質を改善します。
+                </p>
+                <p className="lang en">
+                  Introduces flexible transitions between noise levels and critic-based candidate selection
+                  to improve long-horizon, goal-conditioned planning.
+                </p>
+                <p className="evolution-note">
+                  <span className="lang jp"><strong>着目点：</strong>推論速度 → 柔軟なサンプリングと計画品質</span>
+                  <span className="lang en"><strong>Focus:</strong> inference speed → flexible sampling and plan quality</span>
+                </p>
+                <a className="paper-link" href="https://openreview.net/forum?id=RVGkT9ISVf" target="_blank" rel="noreferrer">
+                  Paper <ExternalArrow />
+                </a>
+              </article>
+            </li>
 
-            <article className="method-card method-ctp">
-              <div className="method-topline">
-                <span>02</span>
-                <span>TMLR 2026</span>
+            <li className="path-item">
+              <div className="path-rail">
+                <span className="path-dot" />
+                <time>Current</time>
               </div>
-              <h3>Consistency<br />Trajectory Planning</h3>
-              <p className="method-code">CTP / FLEXIBLE SAMPLING</p>
-              <div className="lang jp method-description">
-                任意のノイズレベル間を直接移動する軌道モデルと critic による候補選択で、
-                長期・ゴール条件付きタスクの計画品質を向上させました。
-              </div>
-              <div className="lang en method-description">
-                Adds anytime-to-anytime trajectory transitions and critic-based candidate
-                selection to improve long-horizon, goal-conditioned planning.
-              </div>
-              <a href="https://openreview.net/forum?id=RVGkT9ISVf" target="_blank" rel="noreferrer">
-                PAPER <ExternalArrow />
-              </a>
-            </article>
+              <article className="path-content">
+                <header>
+                  <div>
+                    <span className="method-abbr">STP</span>
+                    <h3>Shortcut Trajectory Planning</h3>
+                  </div>
+                  <span className="venue">Under review</span>
+                </header>
+                <p className="lang jp">
+                  単一段階の学習、warm-start、実行可能性を考慮した候補選択を組み合わせ、
+                  より簡潔で実用的な高速軌道計画を検討しています。
+                </p>
+                <p className="lang en">
+                  Combines single-stage training, warm starts, and feasibility-aware selection
+                  toward a simpler and more practical fast trajectory planner.
+                </p>
+                <p className="evolution-note">
+                  <span className="lang jp"><strong>着目点：</strong>計画品質 → 学習の簡潔さと実行可能性</span>
+                  <span className="lang en"><strong>Focus:</strong> plan quality → simpler training and feasibility</span>
+                </p>
+                <span className="paper-status">
+                  <span className="lang jp">TMLR 査読中</span>
+                  <span className="lang en">TMLR submission</span>
+                </span>
+              </article>
+            </li>
+          </ol>
 
-            <div className="method-arrow" aria-hidden="true">→</div>
-
-            <article className="method-card method-stp">
-              <div className="method-topline">
-                <span>03</span>
-                <span>UNDER REVIEW</span>
-              </div>
-              <h3>Shortcut<br />Trajectory Planning</h3>
-              <p className="method-code">STP / PRACTICAL PLANNING</p>
-              <div className="lang jp method-description">
-                単一段階の学習、warm-start、実行可能性を考慮した候補選択を統合。
-                高速性と現実的な軌道の両立を目指す最新手法です。
-              </div>
-              <div className="lang en method-description">
-                Unifies single-stage training, warm starts, and feasibility-aware
-                selection for fast planning with more realistic trajectories.
-              </div>
-              <span className="paper-status">
-                <span className="nav-jp">TMLR 査読中</span>
-                <span className="nav-en">TMLR submission</span>
-              </span>
-            </article>
-          </div>
-
-          <div className="results-panel">
-            <div className="results-copy">
-              <p className="section-eyebrow">SELECTED D4RL RESULTS</p>
-              <h3>
-                <span className="lang jp">長期計画ほど、強みが見える。</span>
-                <span className="lang en">The advantage grows with the horizon.</span>
-              </h3>
-              <p className="lang jp">
-                STP は特に、将来の軌道構造が重要な疎報酬・ゴール条件付きタスクで高い性能を示しました。
-              </p>
-              <p className="lang en">
-                STP is strongest when future trajectory structure matters: sparse-reward,
-                goal-conditioned, and multi-stage tasks.
-              </p>
+          <div className="results-block">
+            <h3>
+              <span className="lang jp">STP の主な評価結果</span>
+              <span className="lang en">Selected STP evaluation results</span>
+            </h3>
+            <p className="results-note lang jp">D4RL ベンチマークにおける平均 normalized score。</p>
+            <p className="results-note lang en">Average normalized scores on D4RL benchmarks.</p>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Maze</th>
+                    <th>Kitchen</th>
+                    <th>AntMaze</th>
+                    <th>Adroit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>183.8</td>
+                    <td>83.6</td>
+                    <td>85.3</td>
+                    <td>114.3</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div className="result-grid">
-              <div className="result-cell">
-                <span>MAZE</span>
-                <strong>183.8</strong>
-                <small>AVERAGE SCORE</small>
-              </div>
-              <div className="result-cell">
-                <span>KITCHEN</span>
-                <strong>83.6</strong>
-                <small>MULTI-STAGE</small>
-              </div>
-              <div className="result-cell">
-                <span>ANTMAZE</span>
-                <strong>85.3</strong>
-                <small>QUADRUPED</small>
-              </div>
-              <div className="result-cell">
-                <span>ADROIT</span>
-                <strong>114.3</strong>
-                <small>DEXTEROUS HAND</small>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="experiments-section" id="experiments">
-          <div className="experiments-inner">
-            <header className="experiments-heading">
-              <div>
-                <p className="section-eyebrow">02 / EXPERIMENTS</p>
-                <h2>
-                  <span className="lang jp">動きで見る、研究成果。</span>
-                  <span className="lang en">Research, seen in motion.</span>
-                </h2>
-              </div>
-              <p className="lang jp">
-                同じ初期条件で、提案手法と拡散ベースラインの挙動を比較できます。
-              </p>
-              <p className="lang en">
-                Compare the proposed planner and a diffusion baseline from matched starting conditions.
-              </p>
-            </header>
-
-            <article className="video-study">
-              <div className="video-study-title">
-                <span className="study-index">A</span>
-                <div>
-                  <h3>KITCHEN / MULTI-STAGE MANIPULATION</h3>
-                  <p className="lang jp">複数の物体操作を連続して完了する長期タスク</p>
-                  <p className="lang en">A long-horizon sequence of object-manipulation subtasks</p>
-                </div>
-              </div>
-              <div className="video-comparison">
-                <figure>
-                  <figcaption><span className="ours-dot" /> STP · OURS</figcaption>
-                  <video controls muted loop playsInline preload="metadata">
-                    <source src="/media/kitchen-stp.mp4" type="video/mp4" />
-                  </video>
-                </figure>
-                <figure>
-                  <figcaption>DECISION DIFFUSER · BASELINE</figcaption>
-                  <video controls muted loop playsInline preload="metadata">
-                    <source src="/media/kitchen-decision-diffuser.mp4" type="video/mp4" />
-                  </video>
-                </figure>
-              </div>
-            </article>
-
-            <article className="video-study">
-              <div className="video-study-title">
-                <span className="study-index">B</span>
-                <div>
-                  <h3>ANTMAZE / LONG-HORIZON NAVIGATION</h3>
-                  <p className="lang jp">高次元な四足歩行ロボットによる迷路探索</p>
-                  <p className="lang en">Maze navigation with a high-dimensional quadruped robot</p>
-                </div>
-              </div>
-              <div className="video-comparison">
-                <figure>
-                  <figcaption><span className="ours-dot" /> STP · OURS</figcaption>
-                  <video controls muted loop playsInline preload="metadata">
-                    <source src="/media/antmaze-stp.mp4" type="video/mp4" />
-                  </video>
-                </figure>
-                <figure>
-                  <figcaption>DECISION DIFFUSER · BASELINE</figcaption>
-                  <video controls muted loop playsInline preload="metadata">
-                    <source src="/media/antmaze-decision-diffuser.mp4" type="video/mp4" />
-                  </video>
-                </figure>
-              </div>
-            </article>
           </div>
         </section>
 
-        <section className="publications-section section-frame" id="publications">
-          <header className="section-heading compact-heading">
-            <span className="section-number">03</span>
-            <div>
-              <p className="section-eyebrow">PUBLICATIONS / 論文</p>
-              <h2>
-                <span className="lang jp">主な研究成果</span>
-                <span className="lang en">Selected publications</span>
-              </h2>
-            </div>
+        <section className="section video-section" id="videos">
+          <header className="section-header">
+            <p className="section-label">Videos</p>
+            <h2>
+              <span className="lang jp">実験動画</span>
+              <span className="lang en">Experiment videos</span>
+            </h2>
           </header>
+          <div className="section-intro">
+            <p className="lang jp">同じタスクにおける STP と Decision Diffuser の実行例です。</p>
+            <p className="lang en">Example rollouts of STP and Decision Diffuser on the same tasks.</p>
+          </div>
 
-          <div className="publication-list">
-            <a className="publication-row" href="https://openreview.net/forum?id=RVGkT9ISVf" target="_blank" rel="noreferrer">
-              <span className="publication-year">2026</span>
-              <span className="publication-main">
-                <strong>Consistency Trajectory Planning</strong>
-                <span>High-Quality and Efficient Trajectory Optimization for Offline Model-Based Reinforcement Learning</span>
-              </span>
-              <span className="publication-venue">TMLR</span>
-              <ExternalArrow />
-            </a>
-            <a className="publication-row" href="https://openreview.net/forum?id=pUvF97zAu9" target="_blank" rel="noreferrer">
-              <span className="publication-year">2025</span>
-              <span className="publication-main">
-                <strong>Which Experiences Are Influential for RL Agents?</strong>
-                <span>Efficiently Estimating the Influence of Experiences</span>
-              </span>
-              <span className="publication-venue">RLJ / RLC</span>
-              <ExternalArrow />
-            </a>
-            <a className="publication-row" href="https://openreview.net/forum?id=TuACCzfty3" target="_blank" rel="noreferrer">
-              <span className="publication-year">2024</span>
-              <span className="publication-main">
-                <strong>Planning with Consistency Models</strong>
-                <span>for Model-Based Offline Reinforcement Learning</span>
-              </span>
-              <span className="publication-venue">TMLR</span>
-              <ExternalArrow />
-            </a>
-            <div className="publication-row publication-static">
-              <span className="publication-year">2023</span>
-              <span className="publication-main">
-                <strong>A Reward Function Design for CSTR Simulation Environments</strong>
-                <span>Stable reinforcement learning for chemical process control</span>
-              </span>
-              <span className="publication-venue">SICE</span>
-              <span aria-hidden="true">—</span>
+          <article className="video-study">
+            <header>
+              <h3>Kitchen</h3>
+              <p className="lang jp">複数の物体操作を順番に完了する長期タスク。</p>
+              <p className="lang en">A long-horizon sequence of object-manipulation subtasks.</p>
+            </header>
+            <div className="video-grid">
+              <figure>
+                <video controls muted loop playsInline preload="metadata">
+                  <source src="/media/kitchen-stp.mp4" type="video/mp4" />
+                </video>
+                <figcaption><strong>STP</strong><span>Proposed method</span></figcaption>
+              </figure>
+              <figure>
+                <video controls muted loop playsInline preload="metadata">
+                  <source src="/media/kitchen-decision-diffuser.mp4" type="video/mp4" />
+                </video>
+                <figcaption><strong>Decision Diffuser</strong><span>Baseline</span></figcaption>
+              </figure>
             </div>
-          </div>
+          </article>
 
-          <div className="publication-actions">
-            <a className="text-link" href="https://openreview.net/profile?id=~Guanquan_Wang1" target="_blank" rel="noreferrer">
-              OpenReview <ExternalArrow />
-            </a>
-            <a className="text-link" href="https://github.com/GuanquanWang/consistency_planning" target="_blank" rel="noreferrer">
-              Consistency Planning code <ExternalArrow />
-            </a>
-          </div>
+          <article className="video-study">
+            <header>
+              <h3>AntMaze</h3>
+              <p className="lang jp">高次元な四足歩行ロボットによる長期迷路探索。</p>
+              <p className="lang en">Long-horizon maze navigation with a high-dimensional quadruped.</p>
+            </header>
+            <div className="video-grid">
+              <figure>
+                <video controls muted loop playsInline preload="metadata">
+                  <source src="/media/antmaze-stp.mp4" type="video/mp4" />
+                </video>
+                <figcaption><strong>STP</strong><span>Proposed method</span></figcaption>
+              </figure>
+              <figure>
+                <video controls muted loop playsInline preload="metadata">
+                  <source src="/media/antmaze-decision-diffuser.mp4" type="video/mp4" />
+                </video>
+                <figcaption><strong>Decision Diffuser</strong><span>Baseline</span></figcaption>
+              </figure>
+            </div>
+          </article>
         </section>
 
-        <section className="profile-section section-frame" id="profile">
-          <header className="section-heading compact-heading">
-            <span className="section-number">04</span>
-            <div>
-              <p className="section-eyebrow">PROFILE / 経歴</p>
-              <h2>
-                <span className="lang jp">制御工学から Embodied AI へ</span>
-                <span className="lang en">From control engineering to embodied AI</span>
-              </h2>
-            </div>
+        <section className="section" id="publications">
+          <header className="section-header">
+            <p className="section-label">Publications</p>
+            <h2>
+              <span className="lang jp">主な論文</span>
+              <span className="lang en">Selected publications</span>
+            </h2>
+          </header>
+          <ol className="publication-list">
+            <li>
+              <span className="publication-year">2026</span>
+              <p>
+                <strong>Consistency Trajectory Planning: High-Quality and Efficient Trajectory Optimization for Offline Model-Based Reinforcement Learning.</strong>
+                <span>Guanquan Wang et al. · TMLR.</span>
+                <a href="https://openreview.net/forum?id=RVGkT9ISVf" target="_blank" rel="noreferrer">Paper <ExternalArrow /></a>
+              </p>
+            </li>
+            <li>
+              <span className="publication-year">2025</span>
+              <p>
+                <strong>Which Experiences Are Influential for RL Agents? Efficiently Estimating the Influence of Experiences.</strong>
+                <span>Guanquan Wang et al. · RLJ / RLC.</span>
+                <a href="https://openreview.net/forum?id=pUvF97zAu9" target="_blank" rel="noreferrer">Paper <ExternalArrow /></a>
+              </p>
+            </li>
+            <li>
+              <span className="publication-year">2024</span>
+              <p>
+                <strong>Planning with Consistency Models for Model-Based Offline Reinforcement Learning.</strong>
+                <span>Guanquan Wang et al. · TMLR.</span>
+                <a href="https://openreview.net/forum?id=TuACCzfty3" target="_blank" rel="noreferrer">Paper <ExternalArrow /></a>
+              </p>
+            </li>
+            <li>
+              <span className="publication-year">2023</span>
+              <p>
+                <strong>A Reward Function Design for CSTR Simulation Environments.</strong>
+                <span>Guanquan Wang et al. · SICE.</span>
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section className="section" id="profile">
+          <header className="section-header">
+            <p className="section-label">Profile</p>
+            <h2>
+              <span className="lang jp">経歴とスキル</span>
+              <span className="lang en">Experience and skills</span>
+            </h2>
           </header>
 
           <div className="profile-grid">
-            <div className="timeline">
-              <article className="timeline-item active">
-                <time>2022.04 — 2026.09</time>
-                <h3>
-                  <span className="lang jp">東京大学 博士後期課程</span>
-                  <span className="lang en">The University of Tokyo · Ph.D.</span>
-                </h3>
-                <p className="lang jp">電子情報学専攻 · 鶴岡研究室</p>
-                <p className="lang en">Information and Communication Engineering · Tsuruoka Laboratory</p>
-              </article>
-              <article className="timeline-item">
-                <time>2022.12 — 2025.03</time>
-                <h3>
-                  <span className="lang jp">NEC-AIST 人工知能連携研究室</span>
-                  <span className="lang en">NEC-AIST AI Cooperative Research Laboratory</span>
-                </h3>
-                <p className="lang jp">リサーチアシスタント</p>
-                <p className="lang en">Research Assistant</p>
-              </article>
-              <article className="timeline-item">
-                <time>2015.09 — 2018.03</time>
-                <h3>
-                  <span className="lang jp">上海交通大学 修士</span>
-                  <span className="lang en">Shanghai Jiao Tong University · M.Eng.</span>
-                </h3>
-                <p className="lang jp">制御科学・工程学</p>
-                <p className="lang en">Control Science and Engineering</p>
-              </article>
-              <article className="timeline-item">
-                <time>2014.09 — 2016.09</time>
-                <h3>
-                  <span className="lang jp">早稲田大学大学院 修士</span>
-                  <span className="lang en">Waseda University · M.Eng.</span>
-                </h3>
-                <p className="lang jp">情報生産システム工学 · ダブルディグリー</p>
-                <p className="lang en">Information, Production and Systems · Double degree</p>
-              </article>
-              <article className="timeline-item">
-                <time>2011.09 — 2015.06</time>
-                <h3>
-                  <span className="lang jp">上海交通大学 学士</span>
-                  <span className="lang en">Shanghai Jiao Tong University · B.Eng.</span>
-                </h3>
-                <p className="lang jp">自動制御工学</p>
-                <p className="lang en">Automation</p>
-              </article>
+            <div>
+              <h3>
+                <span className="lang jp">経歴</span>
+                <span className="lang en">Experience</span>
+              </h3>
+              <dl className="cv-list">
+                <div>
+                  <dt>2022.04–2026.09</dt>
+                  <dd>
+                    <strong className="lang jp">東京大学 博士後期課程</strong>
+                    <strong className="lang en">The University of Tokyo · Ph.D.</strong>
+                    <span className="lang jp">電子情報学専攻 · 鶴岡研究室</span>
+                    <span className="lang en">Information and Communication Engineering · Tsuruoka Laboratory</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>2022.12–2025.03</dt>
+                  <dd>
+                    <strong className="lang jp">NEC-AIST 人工知能連携研究室</strong>
+                    <strong className="lang en">NEC-AIST AI Cooperative Research Laboratory</strong>
+                    <span className="lang jp">リサーチアシスタント</span>
+                    <span className="lang en">Research Assistant</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>2015.09–2018.03</dt>
+                  <dd>
+                    <strong className="lang jp">上海交通大学 修士</strong>
+                    <strong className="lang en">Shanghai Jiao Tong University · M.Eng.</strong>
+                    <span className="lang jp">制御科学・工程学</span>
+                    <span className="lang en">Control Science and Engineering</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>2014.09–2016.09</dt>
+                  <dd>
+                    <strong className="lang jp">早稲田大学大学院 修士</strong>
+                    <strong className="lang en">Waseda University · M.Eng.</strong>
+                    <span className="lang jp">情報生産システム工学 · ダブルディグリー</span>
+                    <span className="lang en">Information, Production and Systems · Double degree</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt>2011.09–2015.06</dt>
+                  <dd>
+                    <strong className="lang jp">上海交通大学 学士</strong>
+                    <strong className="lang en">Shanghai Jiao Tong University · B.Eng.</strong>
+                    <span className="lang jp">自動制御工学</span>
+                    <span className="lang en">Automation</span>
+                  </dd>
+                </div>
+              </dl>
             </div>
 
-            <aside className="capabilities">
-              <div className="capability-block">
-                <span className="capability-label">RESEARCH</span>
-                <p>Robot Learning · Embodied AI · Offline RL · Model-Based RL · VLA · Foundation Models</p>
-              </div>
-              <div className="capability-block">
-                <span className="capability-label">MODELS</span>
-                <p>PyTorch · Transformers · Diffusion · Consistency Models · Shortcut Models · World Models</p>
-              </div>
-              <div className="capability-block">
-                <span className="capability-label">ROBOTICS</span>
-                <p>Trajectory Optimization · MPC · Imitation Learning · Sim-to-Real · State Estimation</p>
-              </div>
-              <div className="capability-block">
-                <span className="capability-label">TOOLS</span>
-                <p>Python · C++ · MuJoCo · D4RL · LIBERO · Isaac Gym · Docker · GPU / HPC</p>
-              </div>
-              <div className="fellowship-note">
-                <span>2022 — 2025</span>
-                <strong>
-                  <span className="lang jp">知能社会国際卓越大学院フェローシップ</span>
-                  <span className="lang en">Intelligent World Fellowship</span>
-                </strong>
-              </div>
+            <aside className="skills">
+              <h3>
+                <span className="lang jp">研究・技術</span>
+                <span className="lang en">Research and technical skills</span>
+              </h3>
+              <dl>
+                <div>
+                  <dt>Research</dt>
+                  <dd>Robot Learning, Embodied AI, Offline RL, Model-Based RL, VLA</dd>
+                </div>
+                <div>
+                  <dt>Methods</dt>
+                  <dd>Transformers, Diffusion Models, Consistency Models, World Models, MPC</dd>
+                </div>
+                <div>
+                  <dt>Tools</dt>
+                  <dd>Python, C++, PyTorch, MuJoCo, D4RL, LIBERO, Isaac Gym, Docker</dd>
+                </div>
+                <div>
+                  <dt>Languages</dt>
+                  <dd>Chinese (native), English (professional), Japanese (JLPT N2)</dd>
+                </div>
+              </dl>
             </aside>
-          </div>
-        </section>
-
-        <section className="contact-section section-frame" id="contact">
-          <div className="contact-copy">
-            <p className="section-eyebrow">LET’S BUILD INTELLIGENT SYSTEMS.</p>
-            <h2>
-              <span className="lang jp">研究を、実世界で動く技術へ。</span>
-              <span className="lang en">From research to systems that move.</span>
-            </h2>
-            <p className="lang jp">
-              日本国内のロボティクス AI、自律システム、Embodied AI の研究開発職を検討しています。
-            </p>
-            <p className="lang en">
-              I am exploring R&amp;D opportunities in robotics AI, autonomous systems,
-              and embodied intelligence in Japan.
-            </p>
-          </div>
-          <div className="contact-links">
-            <a href="mailto:james23sh@gmail.com">EMAIL <ExternalArrow /></a>
-            <a href="https://github.com/GuanquanWang" target="_blank" rel="noreferrer">GITHUB <ExternalArrow /></a>
-            <a href="https://www.linkedin.com/in/guanquan-wang-5398253b8" target="_blank" rel="noreferrer">LINKEDIN <ExternalArrow /></a>
           </div>
         </section>
       </main>
 
-      <footer className="footer">
-        <span>© 2026 GUANQUAN WANG</span>
-        <span>TOKYO · JAPAN</span>
-        <a href="#top">BACK TO TOP ↑</a>
+      <footer className="site-footer">
+        <div>
+          <span>© 2026 Guanquan Wang</span>
+          <a href="mailto:james23sh@gmail.com">james23sh@gmail.com</a>
+          <a href="#top">
+            <span className="nav-jp">ページ上部へ</span>
+            <span className="nav-en">Back to top</span>
+          </a>
+        </div>
       </footer>
     </div>
   );

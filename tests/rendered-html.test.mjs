@@ -13,6 +13,9 @@ test("exports Guanquan Wang's bilingual research portfolio", async () => {
   assert.doesNotMatch(html, /Decision Diffuser|decision-diffuser\.mp4/);
   assert.match(html, /Takuya Hiraoka, <b>Guanquan Wang<\/b>, Takashi Onishi, Yoshimasa Tsuruoka/);
   assert.doesNotMatch(html, /Guanquan Wang et al\. · RLJ \/ RLC/);
+  assert.match(html, /openreview\.net\/forum\?id=vxnMxWJRSM/);
+  assert.match(html, /Deployable RL: From Research to Practice @ RLC 2024/);
+  assert.doesNotMatch(html, /LIBERO|Isaac Gym/);
   assert.match(html, /guanquanwang\.github\.io\/og-simple\.png/);
   assert.doesNotMatch(html, /STP の主な評価結果|Selected STP evaluation results/);
   assert.doesNotMatch(html, /\.(?:pdf|pptx)|\/Users\/|codex-preview/i);

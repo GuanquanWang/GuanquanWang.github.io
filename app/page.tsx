@@ -294,6 +294,14 @@ export default function Home() {
               </p>
             </li>
             <li>
+              <span className="publication-year">2024</span>
+              <p>
+                <strong>Planning with Consistency Models for Model-Based Offline Reinforcement Learning.</strong>
+                <span className="publication-authors"><b>Guanquan Wang</b>, Takuya Hiraoka, Yoshimasa Tsuruoka · Deployable RL: From Research to Practice @ RLC 2024.</span>
+                <a href="https://openreview.net/forum?id=vxnMxWJRSM" target="_blank" rel="noreferrer">Paper <ExternalArrow /></a>
+              </p>
+            </li>
+            <li>
               <span className="publication-year">2023</span>
               <p>
                 <strong>A Reward Function Design for CSTR Simulation Environments.</strong>
@@ -397,7 +405,7 @@ export default function Home() {
                 </div>
                 <div>
                   <dt>Tools</dt>
-                  <dd>Python, C++, PyTorch, MuJoCo, D4RL, LIBERO, Isaac Gym, Docker</dd>
+                  <dd>Python, C++, PyTorch, MuJoCo, D4RL, Docker</dd>
                 </div>
                 <div>
                   <dt>Languages</dt>
